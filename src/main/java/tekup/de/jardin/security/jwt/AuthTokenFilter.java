@@ -1,4 +1,4 @@
-package tekup.de.jardin.Security.jwt;
+package tekup.de.jardin.security.jwt;
 
 import java.io.IOException;
 import javax.servlet.FilterChain;
@@ -13,7 +13,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
-import tekup.de.jardin.Security.services.UserDetailsServiceImpl;
+import tekup.de.jardin.security.services.UserDetailsServiceImpl;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
     @Autowired

@@ -28,5 +28,4 @@ public class EnfantService {
          enfantRepository.deleteById(id_e);
         return enfantRepository.findAll();
     }
-
 }

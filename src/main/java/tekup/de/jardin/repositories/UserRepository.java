@@ -2,7 +2,7 @@ package tekup.de.jardin.repositories;
 
 import java.util.Optional;
 
-import tekup.de.jardin.Models.User;
+import tekup.de.jardin.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 @Repository

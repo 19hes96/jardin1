@@ -1,4 +1,4 @@
-package tekup.de.jardin.Security.services;
+package tekup.de.jardin.security.services;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

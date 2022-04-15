@@ -1,4 +1,4 @@
-package tekup.de.jardin.Models;
+package tekup.de.jardin.models;
 
 public enum ERole {
     ROLE_USER,

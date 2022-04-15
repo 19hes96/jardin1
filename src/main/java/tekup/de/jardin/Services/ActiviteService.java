@@ -3,9 +3,7 @@ package tekup.de.jardin.Services;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tekup.de.jardin.Entities.ActiviteEntity;
-import tekup.de.jardin.Entities.EnfantEntity;
 import tekup.de.jardin.repositories.ActiviteRepository;
-import tekup.de.jardin.repositories.EnfantRepository;
 
 import java.util.Optional;
 

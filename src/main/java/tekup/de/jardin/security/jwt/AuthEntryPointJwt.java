@@ -1,4 +1,4 @@
-package tekup.de.jardin.Security.jwt;
+package tekup.de.jardin.security.jwt;
 
 import java.io.IOException;
 import java.util.HashMap;

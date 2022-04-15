@@ -1,4 +1,4 @@
-package tekup.de.jardin.Models;
+package tekup.de.jardin.models;
 import javax.persistence.*;
 @Entity
 @Table(name = "roles")

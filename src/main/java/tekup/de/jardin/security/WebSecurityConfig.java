@@ -1,4 +1,4 @@
-package tekup.de.jardin.Security;
+package tekup.de.jardin.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,9 +14,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import tekup.de.jardin.Security.jwt.AuthEntryPointJwt;
-import tekup.de.jardin.Security.jwt.AuthTokenFilter;
-import tekup.de.jardin.Security.services.UserDetailsServiceImpl;
+import tekup.de.jardin.security.jwt.AuthEntryPointJwt;
+import tekup.de.jardin.security.jwt.AuthTokenFilter;
+import tekup.de.jardin.security.services.UserDetailsServiceImpl;
 
 import javax.servlet.Filter;
 
