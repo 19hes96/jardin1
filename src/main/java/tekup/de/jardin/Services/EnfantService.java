@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import tekup.de.jardin.Entities.EnfantEntity;
 import tekup.de.jardin.repositories.EnfantRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -12,7 +13,7 @@ import java.util.Optional;
 public class EnfantService {
     private EnfantRepository enfantRepository ;
 
-    public Iterable<EnfantEntity> listAllEnfants() {
+    public List<EnfantEntity> listAllEnfants() {
         return enfantRepository.findAll();
     }
 
@@ -24,7 +25,7 @@ public class EnfantService {
         return enfantRepository.save(enfant);
     }
 
-    public Iterable<EnfantEntity> deleteEnfant(int id_e) {
+    public List<EnfantEntity> deleteEnfant(int id_e) {
          enfantRepository.deleteById(id_e);
         return enfantRepository.findAll();
     }

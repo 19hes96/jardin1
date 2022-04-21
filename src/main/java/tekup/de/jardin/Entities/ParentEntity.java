@@ -21,7 +21,7 @@ public class ParentEntity {
     @OneToMany(mappedBy = "parent")
     private List<EnfantEntity> enfants;
     @OneToMany(mappedBy = "parent")
-    private List<NotificationEntity> notifications;
+    private List<NotifEntity> notifications;
     @OneToMany(mappedBy = "parent")
     private List<RendezvousEntity> rdvs;
     @ManyToOne

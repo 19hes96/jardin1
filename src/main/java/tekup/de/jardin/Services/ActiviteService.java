@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import tekup.de.jardin.Entities.ActiviteEntity;
 import tekup.de.jardin.repositories.ActiviteRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -12,20 +13,20 @@ import java.util.Optional;
 public class ActiviteService {
     private ActiviteRepository activiteRepository ;
 
-    public Iterable<ActiviteEntity> listAllActivites() {
+    public List<ActiviteEntity> listAllActivites() {
         return activiteRepository.findAll();
     }
 
-    public Optional<ActiviteEntity> getActiviteById(int id_a) {
-        return activiteRepository.findById(id_a);
+    public Optional<ActiviteEntity> getActiviteById(int id) {
+        return activiteRepository.findById(id);
     }
 
     public ActiviteEntity saveActivite (ActiviteEntity activite ) {
         return activiteRepository.save(activite);
     }
 
-    public Iterable<ActiviteEntity> deleteActivite(int id_a) {
-        activiteRepository.deleteById(id_a);
+    public List<ActiviteEntity> deleteActivite(int id) {
+        activiteRepository.deleteById(id);
         return activiteRepository.findAll();
     }
 

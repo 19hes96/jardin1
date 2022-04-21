@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import tekup.de.jardin.Entities.EmployeEntity;
 import tekup.de.jardin.repositories.EmployeRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -12,20 +13,20 @@ import java.util.Optional;
 public class EmployeService {
     private EmployeRepository employeRepository ;
 
-    public Iterable<EmployeEntity> listAllEmployes() {
+    public List<EmployeEntity> listAllEmployes() {
         return employeRepository.findAll();
     }
 
-    public Optional<EmployeEntity> getActiviteById(int id_a) {
-        return employeRepository.findById(id_a);
+    public Optional<EmployeEntity> getEmployeById(int id) {
+        return employeRepository.findById(id);
     }
 
-    public EmployeEntity saveActivite (EmployeEntity activite ) {
-        return employeRepository.save(activite);
+    public EmployeEntity saveEmploye (EmployeEntity employe) {
+        return employeRepository.save(employe);
     }
 
-    public Iterable<EmployeEntity> deleteActivite(int id_a) {
-        employeRepository.deleteById(id_a);
+    public List<EmployeEntity> deleteEmploye(int id) {
+        employeRepository.deleteById(id);
         return employeRepository.findAll();
     }
 }

@@ -3,12 +3,13 @@ package tekup.de.jardin.Services;
 import tekup.de.jardin.Entities.EvenementEntity;
 import tekup.de.jardin.repositories.EvenementRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 public class FeedbackService {
     private EvenementRepository evenementRepository ;
 
-    public Iterable<EvenementEntity> listAllEmployes() {
+    public List<EvenementEntity> listAllEmployes() {
         return evenementRepository.findAll();
     }
 
@@ -20,7 +21,7 @@ public class FeedbackService {
         return evenementRepository.save(activite);
     }
 
-    public Iterable<EvenementEntity> deleteActivite(int id_a) {
+    public List<EvenementEntity> deleteActivite(int id_a) {
         evenementRepository.deleteById(id_a);
         return evenementRepository.findAll();
     }

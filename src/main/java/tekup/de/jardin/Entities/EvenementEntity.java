@@ -17,7 +17,7 @@ public class EvenementEntity {
     @OneToMany(mappedBy = "evenement")
     private List<OrganisationEntity> organisations;
     @OneToMany(mappedBy = "evenement")
-    private List<NotificationEntity> notifications;
+    private List<NotifEntity> notifications;
     @OneToMany(mappedBy = "evenement")
     private List<FeedbackEntity> feedbacks;
 

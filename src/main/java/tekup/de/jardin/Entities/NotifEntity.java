@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "notification")
 @Data
-public class NotificationEntity {
+public class NotifEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idn;
